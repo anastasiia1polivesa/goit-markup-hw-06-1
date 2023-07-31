@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,12 +29,14 @@
           >
           <ul class="header-menu list">
             <li class="header-menu-item">
-              <a class="header-menu-link link" href="./index.html">Studio</a>
+              <a
+                class="header-menu-link link light-text "
+                href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-menu-item">
-              <a
-                class="header-menu-link link light-text current"
-                href="./portfolio.html"
+              <a class="header-menu-link current link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -42,9 +45,13 @@
             </li>
           </ul>
         </nav>
-
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-button" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="header-address">
-          <ul class="header-address-list list" style="gap: 40px">
+          <ul class="header-address-list list">
             <li class="header-address-item link">
               <a
                 class="header-address-link link"
@@ -59,6 +66,89 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mob-menu container is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="mob-close-icon" width="8" height="8">
+              <use
+                href="./images/icons.svg#icon-close-black-18dp-2-1
+            "
+              ></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="#">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mob-contacts list">
+          <li class="mob-contact-item">
+          <a class="mob-phone link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          ></li>
+          <li class="mob-contact-item">
+          <a class="mob-email link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          ></li>
+        </ul>
+        <ul class="mob-menu-social list">
+          <li class="mob-social-items">
+            <a
+              class="mob-block-icons"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+            >
+              <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-items">
+            <a
+              class="mob-block-icons"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+            >
+              <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-items">
+            <a
+              class="mob-block-icons"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+            >
+              <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-items">
+            <a
+              class="mob-block-icons"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+            >
+              <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -357,5 +447,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
